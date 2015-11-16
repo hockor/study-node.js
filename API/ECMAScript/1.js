@@ -29,7 +29,7 @@ Person.prototype.run = function() {
     console.log(this.name + ' running');
 }
 
-var p1 = new Person('leo');
+var p1 = new Person('hockor');
 p1.run();*/
 
 var a = 100;
