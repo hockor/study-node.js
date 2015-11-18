@@ -2,16 +2,16 @@
  * Created by admin on 2015/11/18.
  */
 /*
-* urlÄ£¿é
+* urlæ¨¡å—
 
- ´¦ÀíHTTPÇëÇóÊ±urlÄ£¿éÊ¹ÓÃÂÊ³¬¸ß£¬ÒòÎª¸ÃÄ£¿éÔÊĞí½âÎöURL¡¢Éú³ÉURL£¬ÒÔ¼°Æ´½ÓURL¡£*/
+ å¤„ç†HTTPè¯·æ±‚æ—¶urlæ¨¡å—ä½¿ç”¨ç‡è¶…é«˜ï¼Œå› ä¸ºè¯¥æ¨¡å—å…è®¸è§£æURLã€ç”ŸæˆURLï¼Œä»¥åŠæ‹¼æ¥URLã€‚*/
 
-//Ê×ÏÈÒıÈëurlÄ£¿é
+//é¦–å…ˆå¼•å…¥urlæ¨¡å—
 var url = require("url");
 
 console.log(url);
 /*
-´òÓ¡³öÀ´ÎÒÃÇ¿ÉÒÔ¿´µ½url³£ÓÃµÄ¼¸¸ö·½·¨£¬ÏÂÃæ»áÓÃÊµÀıÀ´ÒÀ´ÎÊ¹ÓÃÕâĞ©·½·¨¡£
+æ‰“å°å‡ºæ¥æˆ‘ä»¬å¯ä»¥çœ‹åˆ°urlå¸¸ç”¨çš„å‡ ä¸ªæ–¹æ³•ï¼Œä¸‹é¢ä¼šç”¨å®ä¾‹æ¥ä¾æ¬¡ä½¿ç”¨è¿™äº›æ–¹æ³•ã€‚
 * { parse: [Function: urlParse],
  resolve: [Function: urlResolve],
  resolveObject: [Function: urlResolveObject],
@@ -22,32 +22,32 @@ console.log(url);
 
 // 1.   url.parse(urlStr, [parseQueryString], [slashesDenoteHost])
 /*
-* ½ÓÊÕ²ÎÊı£º
- urlStr                             url×Ö·û´®
- parseQueryString                   ÎªtrueÊ±½«Ê¹ÓÃ²éÑ¯Ä£¿é·ÖÎö²éÑ¯×Ö·û´®£¬Ä¬ÈÏÎªfalse
+* æ¥æ”¶å‚æ•°ï¼š
+ urlStr                             urlå­—ç¬¦ä¸²
+ parseQueryString                   ä¸ºtrueæ—¶å°†ä½¿ç”¨æŸ¥è¯¢æ¨¡å—åˆ†ææŸ¥è¯¢å­—ç¬¦ä¸²ï¼Œé»˜è®¤ä¸ºfalse
  slashesDenoteHost
- Ä¬ÈÏÎªfalse£¬//foo/bar ĞÎÊ½µÄ×Ö·û´®½«±»½âÊÍ³É { pathname: ¡®//foo/bar' }
- Èç¹ûÉèÖÃ³Étrue£¬//foo/bar ĞÎÊ½µÄ×Ö·û´®½«±»½âÊÍ³É  { host: ¡®foo', pathname: ¡®/bar' }
+ é»˜è®¤ä¸ºfalseï¼Œ//foo/bar å½¢å¼çš„å­—ç¬¦ä¸²å°†è¢«è§£é‡Šæˆ { pathname: â€˜//foo/bar' }
+ å¦‚æœè®¾ç½®æˆtrueï¼Œ//foo/bar å½¢å¼çš„å­—ç¬¦ä¸²å°†è¢«è§£é‡Šæˆ  { host: â€˜foo', pathname: â€˜/bar' }
 
- µÚ¶ş¸ö²ÎÊıµÈÓÚtrueÊ±£¬¸Ã·½·¨·µ»ØµÄURL¶ÔÏóÖĞ£¬query×Ö¶Î²»ÔÙÊÇÒ»¸ö×Ö·û´®£¬¶øÊÇÒ»¸ö¾­¹ıquerystringÄ£¿é×ª»»ºóµÄ²ÎÊı¶ÔÏó¡£µÚÈı¸ö²ÎÊıµÈÓÚtrueÊ±£¬¸Ã·½·¨¿ÉÒÔÕıÈ·½âÎö²»´øĞ­ÒéÍ·µÄURL£¬ÀıÈç//www.example.com/foo/bar¡£
+ ç¬¬äºŒä¸ªå‚æ•°ç­‰äºtrueæ—¶ï¼Œè¯¥æ–¹æ³•è¿”å›çš„URLå¯¹è±¡ä¸­ï¼Œqueryå­—æ®µä¸å†æ˜¯ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œè€Œæ˜¯ä¸€ä¸ªç»è¿‡querystringæ¨¡å—è½¬æ¢åçš„å‚æ•°å¯¹è±¡ã€‚ç¬¬ä¸‰ä¸ªå‚æ•°ç­‰äºtrueæ—¶ï¼Œè¯¥æ–¹æ³•å¯ä»¥æ­£ç¡®è§£æä¸å¸¦åè®®å¤´çš„URLï¼Œä¾‹å¦‚//www.example.com/foo/barã€‚
 * */
 
 var a = url.parse('http://example.com:8080/one?a=index&t=article&m=default');
 console.log(a);
 
-//Êä³ö½á¹û£º
+//è¾“å‡ºç»“æœï¼š
 
 /*
-    protocol: ÇëÇóĞ­Òé
- ¡¡¡¡host: URLÖ÷»úÃûÒÑÈ«²¿×ª»»³ÉĞ¡Ğ´, °üÀ¨¶Ë¿ÚĞÅÏ¢
- ¡¡¡¡auth:URLÖĞÉí·İÑéÖ¤ĞÅÏ¢²¿·Ö
- ¡¡¡¡hostname:Ö÷»úµÄÖ÷»úÃû²¿·Ö, ÒÑ×ª»»³ÉĞ¡Ğ´
- ¡¡¡¡port: Ö÷»úµÄ¶Ë¿ÚºÅ²¿·Ö
- ¡¡¡¡pathname: URLµÄÂ·¾¶²¿·Ö,Î»ÓÚÖ÷»úÃûÖ®ºóÇëÇó²éÑ¯Ö®Ç°
- ¡¡¡¡search: URL µÄ¡°²éÑ¯×Ö·û´®¡±²¿·Ö£¬°üÀ¨¿ªÍ·µÄÎÊºÅ¡£
- ¡¡¡¡path: pathname ºÍ search Á¬ÔÚÒ»Æğ¡£
- ¡¡¡¡query: ²éÑ¯×Ö·û´®ÖĞµÄ²ÎÊı²¿·Ö£¨ÎÊºÅºóÃæ²¿·Ö×Ö·û´®£©£¬»òÕßÊ¹ÓÃ querystring.parse() ½âÎöºó·µ»ØµÄ¶ÔÏó¡£
- ¡¡¡¡hash: URL µÄ ¡°#¡± ºóÃæ²¿·Ö£¨°üÀ¨ # ·ûºÅ£©
+    protocol: è¯·æ±‚åè®®
+ ã€€ã€€host: URLä¸»æœºåå·²å…¨éƒ¨è½¬æ¢æˆå°å†™, åŒ…æ‹¬ç«¯å£ä¿¡æ¯
+ ã€€ã€€auth:URLä¸­èº«ä»½éªŒè¯ä¿¡æ¯éƒ¨åˆ†
+ ã€€ã€€hostname:ä¸»æœºçš„ä¸»æœºåéƒ¨åˆ†, å·²è½¬æ¢æˆå°å†™
+ ã€€ã€€port: ä¸»æœºçš„ç«¯å£å·éƒ¨åˆ†
+ ã€€ã€€pathname: URLçš„è·¯å¾„éƒ¨åˆ†,ä½äºä¸»æœºåä¹‹åè¯·æ±‚æŸ¥è¯¢ä¹‹å‰
+ ã€€ã€€search: URL çš„â€œæŸ¥è¯¢å­—ç¬¦ä¸²â€éƒ¨åˆ†ï¼ŒåŒ…æ‹¬å¼€å¤´çš„é—®å·ã€‚
+ ã€€ã€€path: pathname å’Œ search è¿åœ¨ä¸€èµ·ã€‚
+ ã€€ã€€query: æŸ¥è¯¢å­—ç¬¦ä¸²ä¸­çš„å‚æ•°éƒ¨åˆ†ï¼ˆé—®å·åé¢éƒ¨åˆ†å­—ç¬¦ä¸²ï¼‰ï¼Œæˆ–è€…ä½¿ç”¨ querystring.parse() è§£æåè¿”å›çš„å¯¹è±¡ã€‚
+ ã€€ã€€hash: URL çš„ â€œ#â€ åé¢éƒ¨åˆ†ï¼ˆåŒ…æ‹¬ # ç¬¦å·ï¼‰
 
 {
     protocol : 'http' ,
@@ -62,7 +62,7 @@ console.log(a);
     path : '/one?a=index&t=article&m=default',
     href : 'http://example.com:8080/one?a=index&t=article&m=default'}*/
 
-//ÄÇÃ´ÎÒÃÇ¼ÓÉÏºóÁ½¸ö²ÎÊıÄØ£¿´ó¼Ò¿ÉÒÔ¿´µ½queryÖĞ±»¸ñÊ½»¯ÁË¡£
+//é‚£ä¹ˆæˆ‘ä»¬åŠ ä¸Šåä¸¤ä¸ªå‚æ•°å‘¢ï¼Ÿå¤§å®¶å¯ä»¥çœ‹åˆ°queryä¸­è¢«æ ¼å¼åŒ–äº†ã€‚
 var a2 = url.parse('http://example.com:8080/one?a=index&t=article&m=default',true,true);
 console.log(a2);
 /*
@@ -81,13 +81,13 @@ console.log(a2);
  href: 'http://example.com:8080/one?a=index&t=article&m=default' }
 * */
 
-//2 url.format()   ½«ÎÒÃÇ½âÎöµÄurlÖØĞÂÆ´½Ó»ØÍêÕûµÄurl
+//2 url.format()   å°†æˆ‘ä»¬è§£æçš„urlé‡æ–°æ‹¼æ¥å›å®Œæ•´çš„url
 
 console.log(url.format(a2))
-/*Êä³öhttp://example.com:8080/one?a=index&t=article&m=default*/
+/*è¾“å‡ºhttp://example.com:8080/one?a=index&t=article&m=default*/
 
 
-//3 url.resolve(from, to) ÎªURL»ò href ²åÈë »ò Ìæ»»Ô­ÓĞµÄ±êÇ©¡£½ÓÊÕ²ÎÊı£ºfrom   Ô´µØÖ·  to    ĞèÒªÌí¼Ó»òÌæ»»µÄ±êÇ©
+//3 url.resolve(from, to) ä¸ºURLæˆ– href æ’å…¥ æˆ– æ›¿æ¢åŸæœ‰çš„æ ‡ç­¾ã€‚æ¥æ”¶å‚æ•°ï¼šfrom   æºåœ°å€  to    éœ€è¦æ·»åŠ æˆ–æ›¿æ¢çš„æ ‡ç­¾
 var a = url.resolve('/one/two/three', 'four') ,
     b = url.resolve('http://example.com/', '/one'),
     c = url.resolve('http://example.com/one', '/two');
@@ -98,7 +98,7 @@ console.log(a +","+ b +","+ c);
 * http://example.com/two
 * */
 
-//4 Query String  querystringÄ£¿éÓÃÓÚÊµÏÖURL²ÎÊı×Ö·û´®Óë²ÎÊı¶ÔÏóµÄ»¥Ïà×ª»»£¬Ê¾ÀıÈçÏÂ¡£
+//4 Query String  querystringæ¨¡å—ç”¨äºå®ç°URLå‚æ•°å­—ç¬¦ä¸²ä¸å‚æ•°å¯¹è±¡çš„äº’ç›¸è½¬æ¢ï¼Œç¤ºä¾‹å¦‚ä¸‹ã€‚
 
     var querystring = require("querystring");
     var test = querystring.parse('foo=bar&baz=qux&baz=quux&corge');
@@ -111,3 +111,11 @@ console.log(a +","+ b +","+ c);
 /*
  'foo=bar&baz=qux&baz=quux&corge='
  */
+
+//querystring.escape()  å¯¹å­—ç¬¦ä¸²è¿›è¡Œè½¬ç§»ï¼Œå¯¹åº”çš„æ˜¯åè½¬ä¹‰
+console.log(  querystring.escape("<å“ˆå“ˆ>")   );
+/*%3C%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%3E*/
+
+
+console.log(  querystring.unescape("%3C%E5%93%88%E5%93%88%3E")  );
+/*<å“ˆå“ˆ>*/
