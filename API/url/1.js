@@ -99,7 +99,7 @@ console.log(a +","+ b +","+ c);
 * */
 
 //4 Query String  querystring模块用于实现URL参数字符串与参数对象的互相转换，示例如下。
-
+//引入querystring模块
     var querystring = require("querystring");
     var test = querystring.parse('foo=bar&baz=qux&baz=quux&corge');
     console.log(test)

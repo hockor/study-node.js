@@ -31,7 +31,7 @@ for (var i=0; i<bf.length; i++) {
     console.log( String.fromCharCode( bf[i] ) );
 }*/
 
-/*var str1 = 'hockor';
+var str1 = 'hockor';
 var bf1 = new Buffer(str1);
 console.log(str1.length);
 console.log(bf1.length);
@@ -39,7 +39,7 @@ console.log(bf1.length);
 var str2 = '中国';
 var bf2 = new Buffer(str2);
 console.log(str2.length);
-console.log(bf2.length);*/
+console.log(bf2.length);
 
 
 
